@@ -28,14 +28,13 @@ The machine learning part is located in the `sparkful_ml/` directory.
   The file `Clean_dataset.csv` is the raw data.  
   You can also run `download.sh` to automatically download the dataset.
 
-- **models/**  
-  Contains three machine learning models used for prediction, implemented with `scikit-learn`:  
-  - XGBoost (XGB)
-  - Gradient Boosting Regressor (GBR)
-  - Random Forest (RF)
-
 - **results/**  
-  Stores the plots comparing the predicted prices and actual prices.
+  Stores PNG plots comparing predicted vs. actual prices for each model.  
+  We’ve implemented three algorithms (using `scikit-learn`):  
+  - **XGBoost (XGB)**  
+  - **Gradient Boosting Regressor (GBR)**  
+  - **Random Forest (RF)**  
+  After running `training.py`, you’ll find both the generated model files (in `.pkl` format) and the corresponding prediction plots in this folder.
 
 - **training.py**  
   The main training script.  
@@ -45,6 +44,7 @@ The machine learning part is located in the `sparkful_ml/` directory.
 ## Notes
 
 ```text
+- Pre-trained .pkl files are too large for this repo; train your own with training.py.
 - The backend provides prediction APIs.
 - The frontend provides a user interface to input product features.
 ```
