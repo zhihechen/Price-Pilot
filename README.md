@@ -18,11 +18,33 @@ pip install -r requirements.txt
 cd ai_hack_backend
 ```
 
+## ML
+
+The machine learning part is located in the `sparkful_ml/` directory.
+
+- **data/**  
+  Contains the dataset for training and testing.  
+  The dataset is sourced from [Kaggle - Flight Price Prediction](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction).  
+  The file `Clean_dataset.csv` is the raw data.  
+  You can also run `download.sh` to automatically download the dataset.
+
+- **models/**  
+  Contains three machine learning models used for prediction, implemented with `scikit-learn`:  
+  - XGBoost (XGB)
+  - Gradient Boosting Regressor (GBR)
+  - Random Forest (RF)
+
+- **results/**  
+  Stores the plots comparing the predicted prices and actual prices.
+
+- **training.py**  
+  The main training script.  
+  You can modify `training.py` to select and train the model you prefer.
+
+
 ## Notes
 
 ```text
-- Model files (.pkl) are large and are not uploaded to GitHub.
-- You can upload your own models or adjust the code to train new ones.
 - The backend provides prediction APIs.
 - The frontend provides a user interface to input product features.
 ```
