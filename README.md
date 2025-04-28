@@ -23,17 +23,18 @@ cd ai_hack_backend
 The machine learning part is located in the `sparkful_ml/` directory.
 
 - **data/**  
-  Contains the dataset for training and testing.  
-  The dataset is sourced from [Kaggle - Flight Price Prediction](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction).  
-  The file `Clean_dataset.csv` is the raw data.  
-  You can also run `download.sh` to automatically download the dataset.
+  - Contains the dataset for training and testing.  
+  - The dataset is sourced from [Kaggle - Flight Price Prediction](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction).  
+  - The file `Clean_dataset.csv` is the raw data.  
+  - You can also run `download.sh` to automatically download the dataset.
 
 - **results/**  
   Stores PNG plots comparing predicted vs. actual prices for each model.  
   We’ve implemented three algorithms (using `scikit-learn`):  
   - **XGBoost (XGB)**  
   - **Gradient Boosting Regressor (GBR)**  
-  - **Random Forest (RF)**  
+  - **Random Forest (RF)**
+  
   After running `training.py`, you’ll find both the generated model files (in `.pkl` format) and the corresponding prediction plots in this folder.
 
 - **training.py**  
