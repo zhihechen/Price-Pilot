@@ -13,9 +13,13 @@ pip install -r requirements.txt
 ```
 
 ## Run Backend
-
+### Navigate to the project directory
 ```bash
 cd ai_hack_backend
+```
+### Start the server
+```
+uvicorn app:app --reload --host <your_host> --port <your_port>
 ```
 
 ## ML
